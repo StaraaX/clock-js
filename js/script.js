@@ -31,6 +31,8 @@ var color ="border-color:rgb("+Math.floor(Math.random() *256)+","+Math.floor(Mat
     
 }
 
+var x=0 ;
+
 
 
 
