@@ -1,16 +1,9 @@
 loop();
 clock();
 
-
-
-
-
 function loop(){
-    setInterval(() => clock(),1000);
-   
+    setInterval(() => clock(),1000);  
 }
-
-
 function clock(){
 var div=document.getElementById("container");
 var h=document.getElementById("hours");
