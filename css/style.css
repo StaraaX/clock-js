@@ -1,47 +1,100 @@
-body,html{
-    margin: 0px;
-    padding: 0px;
-    box-sizing: border-box;
-    height: 100%;
-    width: 100%;
 
+@media (min-width:768px){
+
+    body,html{  
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+        height: 100%;
+        width: 100%;
+    }
+
+    body{
+        background-color:#84b8bef3;
+    }
+
+    #idk{
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+
+    #container{
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size:90px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 5px  solid;   
+        width:325px;
+        background-color: blanchedalmond;
+        animation: dropIn 1.5s ease forwards;
+    }
+
+    @keyframes dropIn {
+        0% {transform: translateY(-500px);}
+        75%{transform: translateY(20px);}
+        100% {transform: translatey(00);}
+    }
 }
-body{
-
-    background-color:#84b8bef3;
-}
-#idk{
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-   
-   
-}
 
 
-#container{
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    /* margin-top: 70%; */
-    font-size:90px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border: 5px  solid;   
-    width:325px;
-    background-color: blanchedalmond;
 
-
-    animation: dropIn 1.5s ease forwards;
-
-}
-
-
-@keyframes dropIn {
-    0% {transform: translateY(-500px);}
-    75%{transform: translateY(20px);}
-    100% {transform: translatey(00);}
+@media (max-width:767px){
     
+    body,html{  
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+        height: 100%;
+        width: 100%;
+    }
+
+    body{
+        background-color:#470dcef3;
+    }
+
+    #idk{
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+
+    #container{
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size:90px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        border: 5px  solid;   
+        width:200px;
+        background-color: rgb(184, 157, 133);
+        animation: dropIn 1.5s ease forwards;
+    }
+#container:hover {
+  cursor: pointer;
+}
+#idk::after,#idk::before {
+    content: "📱";
+    font-size: 18px;
+    animation: squeezning 1s ease-in-out infinite;
+}
+    @keyframes squeezning {
+        0%{transform: translatey(25px);}
+        50%{transform: translatey(-25px);}
+        100%{transform: translatey(25px);}
+        
+    }
     
+
+    @keyframes dropIn {
+        0% {transform: translateY(-500px);}
+        75%{transform: translateY(20px);}
+        100% {transform: translatey(00);}
+    }
 }
